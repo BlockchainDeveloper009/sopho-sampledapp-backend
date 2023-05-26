@@ -9,6 +9,15 @@ module.exports = {
   networks: {
     hardhat: {
       chainId: 1337
-    }
-  }
+    },
+    mumbai: {
+      url: ALCHEMY_API_KEY_URL,
+      accounts: [MUMBAI_PRIVATE_KEY],
+    },
+  },
+  etherscan: {
+    apiKey: {
+      polygonMumbai: POLYGONSCAN_KEY,
+    },
+  },
 };
